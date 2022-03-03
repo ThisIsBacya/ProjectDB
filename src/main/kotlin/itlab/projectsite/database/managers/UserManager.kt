@@ -27,10 +27,13 @@ class UserManager(
                 login = userModel.login
                 password = userModel.password
                 fio = userModel.fio
+                email = userModel.email
                 token = (userModel.fio.hashCode() % 100000000).toString()
             }.let {
                 userMapper(it)
             }
         }
     }.getOrElse { it.localizedMessage }
+
+    fun deleteUser () = runCatching {  }
 }

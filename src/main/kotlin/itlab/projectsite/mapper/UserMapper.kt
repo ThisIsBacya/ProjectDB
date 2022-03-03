@@ -10,7 +10,8 @@ class UserMapper : Mapper<User, UserModel> {
             password = input.password,
             fio = input.fio,
             token = input.token,
-            id = input.id.value
+            id = input.id.value,
+            email = input.email
         )
     }
 }

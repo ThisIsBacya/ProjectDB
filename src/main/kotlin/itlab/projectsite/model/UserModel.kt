@@ -8,7 +8,7 @@ data class UserModel(
     val password: String,
     val fio: String,
     val token: String,
-    val id: Int
+    val id: Int,
     val email: String
 )
 
@@ -16,6 +16,6 @@ data class UserModel(
 data class UserResponseModel(
     val login: String,
     val password: String,
-    val fio: String
+    val fio: String,
     val email: String
 )
